@@ -13,7 +13,7 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
       console.log(card);
 
       const markup = `
-            <div class="card col-lg-3 col-md-5 col-sm-12 d-flex">
+            <div class="card  col-lg-3 col-md-5 col-sm-12 d-flex">
                 <img class="pin" src="./assets_day1/img/pin.svg" alt="" />
                 <div>
                     <img
