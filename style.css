@@ -41,6 +41,19 @@ body {
         padding-top: 0;
         padding-left: 1rem;
         padding-right: 1rem;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
+
+        .date {
+            font-family: "Sometype Mono", monospace;
+            color: gray;
+            font-size: 0.75rem;
+        }
+
+        .subtitle {
+            font-family: "Edu TAS Beginner", cursive;
+            font-size: 1.50rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
     }
 }
