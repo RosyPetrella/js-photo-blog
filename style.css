@@ -5,13 +5,42 @@
     box-sizing: border-box;
 }
 
-h1 {
+    #title {
     font-family: "Edu TAS Beginner", cursive;
     text-align: center;
-    font-size: 67px;
+    font-size: 4.25rem;
+    font-weight: 600;
     margin-top: 0rem;
     margin-bottom: 0rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
     background-image: url(./assets_day1/img/wall.png);
+}
+
+body {
+    background-image: url(./assets_day1/img/cork.png);
+}
+
+.container {
+    /* height: 80vh; */
+    padding-bottom: 2rem;
+
+    .card {
+        border-radius: 0px;
+        padding: 0;
+    }
+
+    .pin {
+        height: 26px;
+        position: absolute;
+        top: -5px;
+        left: calc(50% - 13px)
+    }
+   
+    .description {
+        padding-top: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 2rem;
+    }
 }
