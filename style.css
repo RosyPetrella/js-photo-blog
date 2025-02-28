@@ -1,0 +1,17 @@
+* {
+    border: 0px;
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Edu TAS Beginner", cursive;
+    text-align: center;
+    font-size: 67px;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-image: url(./assets_day1/img/wall.png);
+}
