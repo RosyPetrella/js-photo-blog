@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.75);
+    z-index: 1;
+    display: none;
+}
+
 #title {
     font-family: "Edu TAS Beginner", cursive;
     text-align: center;
