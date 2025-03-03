@@ -41,15 +41,15 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
           const overlayDivEl = document.querySelector(".overlay");
           overlayDivEl.classList.remove("hidden");
 
-          overlayDivEl.innerHTML = `
-            <button class="btn btn-light">Chiudi</button>
-            <img src="${card.querySelector("img.foto").src}" class="bigger">`;
+          // overlayDivEl.innerHTML = `
+          //   <button class="btn btn-light">Chiudi</button>
+          //   <img src="${card.querySelector("img.foto").src}" class="bigger">`;
 
-          // const markupImg = `
-          // <button class="btn btn-light">Chiudi</button>
-          // <img src="${card.querySelector("img.foto").src}" class="bigger">`;
+          const markupImg = `
+          <button class="btn btn-light">Chiudi</button>
+          <img src="${card.querySelector("img.foto").src}" class="bigger">`;
 
-          // insertHTML(overlayDivEl,markupImg)
+          insertHTML(overlayDivEl, markupImg);
 
           const buttonEl = overlayDivEl.querySelector(".btn");
           console.log(buttonEl);
