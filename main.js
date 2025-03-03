@@ -56,6 +56,6 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
   })
   .catch((error) => console.error(error.message));
 
-function insertHTML(DOMElement, htmlContent) {
-  DOMElement.insertAdjacentHTML("beforeend", htmlContent);
+function insertHTML(domElement, htmlContent) {
+  domElement.insertAdjacentHTML("beforeend", htmlContent);
 }
