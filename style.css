@@ -19,7 +19,7 @@
 }
 
 .bigger {
-    width: 300px;
+    width: 600px;
     height: auto;
     z-index: 2;
     position: absolute;
@@ -83,6 +83,15 @@ body {
             text-transform: uppercase;
         }
     }
+}
+
+button {
+    z-index: 2;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 5%;
+
 }
 
 @media screen and (max-width:768px){

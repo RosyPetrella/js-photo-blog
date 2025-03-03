@@ -33,6 +33,7 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
       insertHTML(rowEl, markup);
 
       const cards = rowEl.querySelectorAll(".card");
+      console.log(cards);
 
       cards.forEach((card) => {
         const imgEl = card.querySelector(".foto");
@@ -40,11 +41,17 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
 
         imgEl.addEventListener("click", function () {
           const overlayDivEl = document.querySelector(".overlay");
-
           overlayDivEl.classList.remove("hidden");
-          card.classList.remove("col-lg-3", "col-md-5", "col-xs-6");
-          card.classList.add("col-lg-6");
-          imgEl.classList.add("bigger");
+
+          overlayDivEl.innerHTML = `
+            <button class="btn btn-light">Chiudi</button>
+            <img src="${card.querySelector("img.foto").src}" class="bigger">`;
+
+          const buttonEl = overlayDivEl.querySelector(".btn");
+
+          buttonEl.addEventListener("click", function () {
+            overlayDivEl.classList.add("hidden");
+          });
         });
       });
 
