@@ -10,8 +10,6 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
 
     // ciclo nell'array creato per prendermi singolarmente ogni oggetto (card)
     pictureArray.forEach((card) => {
-      // console.log(card);
-
       const markup = `
             <div class="card  col-lg-3 col-md-5 col-xs-6 d-flex">
                 <img class="pin" src="./assets_day1/img/pin.svg" alt="" />
@@ -47,7 +45,14 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
             <button class="btn btn-light">Chiudi</button>
             <img src="${card.querySelector("img.foto").src}" class="bigger">`;
 
+          // const markupImg = `
+          // <button class="btn btn-light">Chiudi</button>
+          // <img src="${card.querySelector("img.foto").src}" class="bigger">`;
+
+          // insertHTML(overlayDivEl,markupImg)
+
           const buttonEl = overlayDivEl.querySelector(".btn");
+          console.log(buttonEl);
 
           buttonEl.addEventListener("click", function () {
             overlayDivEl.classList.add("hidden");
