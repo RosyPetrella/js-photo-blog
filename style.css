@@ -63,6 +63,10 @@ body {
         z-index: 5;
     }
 
+    .foto:hover {
+        cursor: pointer;
+    }
+
 
     .pin {
         height: 26px;
