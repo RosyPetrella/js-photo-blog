@@ -11,8 +11,24 @@
     height: 100%;
     background-color: rgba(0,0,0,0.75);
     z-index: 1;
+
+}
+
+.hidden {
     display: none;
 }
+
+.bigger {
+    width: 300px;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+
 
 #title {
     font-family: "Edu TAS Beginner", cursive;
@@ -33,6 +49,7 @@ body {
 .container {
     padding-bottom: 2rem;
     width: 100%;
+    position: relative;
 
     .card {
         border-radius: 0px;
